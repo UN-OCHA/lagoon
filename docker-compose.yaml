@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   mariadb:
-    image: ${IMAGE_REPO:-amazeeiolagoon}/mariadb
+    image: mariadb
     volumes:
       - ./services/mariadb/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
       - ./services/mariadb/rerun_initdb.sh:/rerun_initdb.sh
